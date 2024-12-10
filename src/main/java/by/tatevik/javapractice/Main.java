@@ -9,6 +9,13 @@ public class Main {
         //int[] arr=new int[27];
        // task2(arr);
        // System.out.println(Arrays.toString(arr));
+
+        //task4
+        //int maxN=5;
+        //long[]arr3=new long[5];
+        //task4(arr3,maxN);
+       // System.out.println(Arrays.toString(arr3));
+
     }
     //вывести элементы массива в обратном порядке на экран
     public static void printRevertArr(int[]arr){
@@ -31,18 +38,37 @@ public class Main {
         arr[25]=100;
         arr[26]=200;
     }
-    //Создать метод public static void task1().
+    //Создать метод public static void task3().
     //Внутри него объявить 2 переменных типа int,
     // проинициализировать их прямо в коде. Затем
     // поменять местами значения в переменных без использования
     // литералов, но с использованием дополнительной переменной.
-    public static void task(){
+    public static void task3(){
         int num1=20;
         int num2=25;
         int container;
         container=num1;
         num1=num2;
         num2=container;
+    }
+    //заполнить массив степенями числа 2 , где степени от 1 до n
+    public static void task4(long[]arr,int maxN) {
+        int n=1;
+        int index=0;
+        while (n<=maxN){
+            long res=1;
+            int counter=1;
+            while (counter<=n){
+                res=res*2;
+                counter=counter+1;
+            }
+            arr[index]=res;
+            index=index+1;
+            n=n+1;
+        }
+
+
+
     }
 
 }
