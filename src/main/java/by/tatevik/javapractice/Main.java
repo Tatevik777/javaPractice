@@ -4,8 +4,11 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int[] arr2=new int[]{11,12,13,14,15,16,17,18};
-        printRevertArr(arr2);
+        //task1
+       // int[] arr2=new int[]{11,12,13,14,15,16,17,18};
+       // printRevertArr(arr2);
+
+        
         //int[] arr=new int[27];
        // task2(arr);
        // System.out.println(Arrays.toString(arr));
@@ -17,7 +20,7 @@ public class Main {
        // System.out.println(Arrays.toString(arr3));
 
     }
-    //вывести элементы массива в обратном порядке на экран
+    //1. вывести элементы массива в обратном порядке на экран
     public static void printRevertArr(int[]arr){
         int index=arr.length-1;
         while(index>=0){
@@ -25,7 +28,7 @@ public class Main {
             index=index-1;
         }
     }
-    //заполнить массив  первыми 25 натуральными числами(1,2,3,4.....)
+    //2. заполнить массив  первыми 25 натуральными числами(1,2,3,4.....)
     //затем добавить в него 100, 200
     public static void task2(int[]arr){
         int index=0;
@@ -38,7 +41,7 @@ public class Main {
         arr[25]=100;
         arr[26]=200;
     }
-    //Создать метод public static void task3().
+    //3.Создать метод public static void task3().
     //Внутри него объявить 2 переменных типа int,
     // проинициализировать их прямо в коде. Затем
     // поменять местами значения в переменных без использования
@@ -51,7 +54,7 @@ public class Main {
         num1=num2;
         num2=container;
     }
-    //заполнить массив степенями числа 2 , где степени от 1 до n
+    //4.заполнить массив степенями числа 2 , где степени от 1 до n
     public static void task4(long[]arr,int maxN) {
         int n=1;
         int index=0;
@@ -66,9 +69,24 @@ public class Main {
             index=index+1;
             n=n+1;
         }
-
-
-
     }
+    //5.выполнить задание из рункта 3, но без использования дополнительной переменной
+    public  static void task5() {
+        int num1=15;
+        int num2=5;
+        num1=num2+num1;
+        num2=num1-num2;
+        num1=num2-num1;
+    }
+    //сохдать метод public static void task___()
+    //Объявить переменную типа float и проиницилизировать
+    //ее значением прямо в коде. Объявить перемнную y
+    //типа Integer  и присвоить ей  значение из переменной x без использования
+    //вызовов методов  какого - либо класса.
+    public static void task6(){
+        float x =25.3f;
+        Integer y=(int)x;
+    }
+
 
 }
