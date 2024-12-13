@@ -78,7 +78,7 @@ public class Main {
         num2=num1-num2;
         num1=num2-num1;
     }
-    //сохдать метод public static void task___()
+    //создать метод public static void task___()
     //Объявить переменную типа float и проиницилизировать
     //ее значением прямо в коде. Объявить перемнную y
     //типа Integer  и присвоить ей  значение из переменной x без использования
@@ -87,6 +87,27 @@ public class Main {
         float x =25.3f;
         Integer y=(int)x;
     }
+    //создать метод public static void task___()
+    //создать в методе 2 строки "abc" и "abc" в переменных String  str1
+    // и String  str2 так, чтобы выражение  str1==str2 возвращало false
+    public static void task7(){
+        String str1=new String("abc");
+        String str2="abc";
+    }
+    /*
+     создать метод public static void task___()
+     Создать в методе две переменных Integer num1
+     и Integer num2 со значениями 5 и 5 так,чтобы
+     выражение num1==num2 возвращало false
+     */
+    public  static void task8(){
+    Integer num1=5;
+    Integer num2=new Integer(5);
+    }
 
 
+
+    /*
+
+     */
 }
