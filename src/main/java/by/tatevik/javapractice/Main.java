@@ -104,7 +104,27 @@ public class Main {
     Integer num1=5;
     Integer num2=new Integer(5);
     }
+    /*
+ создать метод public static void task___()
+ Используя тернарный оператор  И System.out.println()
+ сравнить 2 числа и распечатать true или false . Все это необходимо
+ реалтзовать в одну строку кода внутри метода.
+     */
+    public static void task9(){
+        System.out.println(2 < 5 ? true : false);
+    }
+    /*
+     создать метод public static void task___()
+     Объявить в методе переменную int x и сразу проинициализировать ее
+     значением 5. Следующей строкой кода сначала вывести значение переменной
+     в терминал, а затем уменьшить значение переменной  на 1
+     (тоесть внутри метода должно быть 2 строки кода всего)
+     */
+    public  static void task10(){
+        int x =5;
+        System.out.println(x--);
 
+    }
 
 
     /*
