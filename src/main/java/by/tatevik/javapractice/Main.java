@@ -18,6 +18,7 @@ public class Main {
         //long[]arr3=new long[5];
         //task4(arr3,maxN);
        // System.out.println(Arrays.toString(arr3));
+        task12();
 
     }
     //1. вывести элементы массива в обратном порядке на экран
@@ -137,11 +138,32 @@ public class Main {
             System.out.println(++x);
 
         }
+           /*
+     создать метод public static void task___()
+     Объявить  переменную char sign и сразу проинициализировать ее
+     значением "а". Используя цикл while и переменную sign вывести
+      в терминал все буквы от a до z
+     */
+           public  static void task12(){
+               char sign ='a';
+               // while (sign<=127){
+               //   System.out.println(sign+" ");
+               //  sign++;
+               // }
+               StringBuilder sb=new StringBuilder();
+               while (sign<=122){
+                   sb.append(sign++);
+                   sb.append(" ");
+                    }
+               System.out.println(sb.toString());
 
-
+           }
 
 
     /*
+
+
+
 
      */
 
