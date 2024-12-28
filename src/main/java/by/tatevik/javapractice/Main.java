@@ -18,7 +18,7 @@ public class Main {
         //long[]arr3=new long[5];
         //task4(arr3,maxN);
        // System.out.println(Arrays.toString(arr3));
-        task12();
+
 
     }
     //1. вывести элементы массива в обратном порядке на экран
@@ -124,7 +124,6 @@ public class Main {
     public  static void task10(){
         int x =5;
         System.out.println(x--);
-
     }
         /*
      создать метод public static void task___()
@@ -136,7 +135,6 @@ public class Main {
         public  static void task11(){
             int x =7;
             System.out.println(++x);
-
         }
            /*
      создать метод public static void task___()
@@ -156,8 +154,25 @@ public class Main {
                    sb.append(" ");
                     }
                System.out.println(sb.toString());
-
            }
+                   /*
+     создать метод public static void task___()
+    Реализовать в методе цикл while (true), (циклб у которого
+     в условии написано true ), которые распечатает числа только от 1-5
+     */
+
+         public static void task13(){
+             int x=1;
+             while(true){
+                 System.out.println(x);
+                 if(x==5){
+                     break;
+                 }
+                 x++;
+             }
+
+    }
+
 
 
     /*
@@ -167,13 +182,4 @@ public class Main {
 
      */
 
-
-
-
-
-
-
-    /*
-
-     */
 }
