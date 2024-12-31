@@ -1,5 +1,6 @@
 package by.tatevik.javapractice;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
@@ -18,6 +19,7 @@ public class Main {
         //long[]arr3=new long[5];
         //task4(arr3,maxN);
         // System.out.println(Arrays.toString(arr3));
+        task15();
     }
 
     //1. вывести элементы массива в обратном порядке на экран
@@ -205,11 +207,33 @@ public class Main {
         }
         System.out.println(counter);
     }
+
     /*
-определить количество всех трехзначных чисел,
-кратных 7 и также сумма цифр котрых равна 7;
-*/
+    Создать метод public static void task().
+    Создать в методе переменную String str и проинициализировать её значением:
+    «Dorothy lived in the midst of the great Kansas prairies, with Uncle Henry,
+    who was a farmer, and Aunt Em, who was the farmer's wife.»
+    Написать в методе код, который посчитает количество слов в
+    этом предложении. (код должен сработать для любого предложения,
+    с любым количеством слов, а не только этого). запрещено использование
+    методов типа split
 
+    */
 
+    public static void task15() {
+        String str= "Dorothy lived in the midst of the great Kansas prairies, with Uncle Henry, " +
+                "who was a farmer, and Aunt Em, who was the farmer's wife.";
+        int index=0;
+        int strSize=str.length();
+        int counter=0;
+        while (index < strSize){
+            if (str.charAt(index)==' '){
+                counter++;
+
+            }
+            index++;
+        }
+        System.out.println(++counter);
+    }
 
 }
