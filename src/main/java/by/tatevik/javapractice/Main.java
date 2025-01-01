@@ -19,7 +19,7 @@ public class Main {
         //long[]arr3=new long[5];
         //task4(arr3,maxN);
         // System.out.println(Arrays.toString(arr3));
-        task15();
+        task16();
     }
 
     //1. вывести элементы массива в обратном порядке на экран
@@ -197,9 +197,9 @@ public class Main {
                 int num = x;
                 while (num > 0) {
                     digitSum = digitSum + num % 10;//123 % 10=3; 25 % 10=5; 3 % 10=3;
-                    num= num / 10;//123/10=12;25/10=2;3/10=0
+                    num = num / 10;//123/10=12;25/10=2;3/10=0
                 }
-                if (digitSum % 7 ==0){
+                if (digitSum % 7 == 0) {
                     counter++;
                 }
             }
@@ -221,13 +221,13 @@ public class Main {
     */
 
     public static void task15() {
-        String str= "Dorothy lived in the midst of the great Kansas prairies, with Uncle Henry, " +
+        String str = "Dorothy lived in the midst of the great Kansas prairies, with Uncle Henry, " +
                 "who was a farmer, and Aunt Em, who was the farmer's wife.";
-        int index=0;
-        int strSize=str.length();
-        int counter=0;
-        while (index < strSize){
-            if (str.charAt(index)==' '){
+        int index = 0;
+        int strSize = str.length();
+        int counter = 0;
+        while (index < strSize) {
+            if (str.charAt(index) == ' ') {
                 counter++;
 
             }
@@ -235,5 +235,31 @@ public class Main {
         }
         System.out.println(++counter);
     }
+
+    /*
+    Создать метод public static void task....().
+    Написать в методе код, который заполняет массив из 10 элементов числами фибоначчи,
+    начиная с начала ряда.
+  */
+
+    public static void task16() {
+        int[] arr = new int[10];
+        arr[0] = 0;
+        arr[1] = 1;
+        int index = 2;
+        while (index < arr.length) {
+            arr[index] = arr[index - 1] + arr[index - 2];
+            index++;
+        }
+        System.out.println(Arrays.toString(arr));
+    }
+
+    /*
+  Создать метод public static void task14().
+  Создать массив и заполнить его в цикле while заглавными
+  буквами английского алфавита без использования ввода с клавиатуры.
+  */
+
+
 
 }
