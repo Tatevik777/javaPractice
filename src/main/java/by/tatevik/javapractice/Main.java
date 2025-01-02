@@ -19,7 +19,7 @@ public class Main {
         //long[]arr3=new long[5];
         //task4(arr3,maxN);
         // System.out.println(Arrays.toString(arr3));
-        task16();
+        task17();
     }
 
     //1. вывести элементы массива в обратном порядке на экран
@@ -255,11 +255,22 @@ public class Main {
     }
 
     /*
-  Создать метод public static void task14().
+  Создать метод public static void task....().
   Создать массив и заполнить его в цикле while заглавными
   буквами английского алфавита без использования ввода с клавиатуры.
   */
-
+public static void task17(){
+int size='Z'-'A'+1;
+char[] arr=new char[size];
+char sign='A';
+int index=0;
+while (index<size){
+    arr[index]=sign;
+    index++;
+    sign++;
+}
+    System.out.println(Arrays.toString(arr));
+}
 
 
 }
