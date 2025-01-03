@@ -1,6 +1,5 @@
-package by.tatevik.javapractice;
+package by.tatevik.javapractice.main;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
@@ -19,10 +18,12 @@ public class Main {
         //long[]arr3=new long[5];
         //task4(arr3,maxN);
         // System.out.println(Arrays.toString(arr3));
-        task18();
+
+        task21();
     }
 
     //1. вывести элементы массива в обратном порядке на экран
+
     public static void printRevertArr(int[] arr) {
         int index = arr.length - 1;
         while (index >= 0) {
@@ -33,6 +34,7 @@ public class Main {
 
     //2. заполнить массив  первыми 25 натуральными числами(1,2,3,4.....)
     //затем добавить в него 100, 200
+
     public static void task2(int[] arr) {
         int index = 0;
         int num = 1;
@@ -50,6 +52,7 @@ public class Main {
     // проинициализировать их прямо в коде. Затем
     // поменять местами значения в переменных без использования
     // литералов, но с использованием дополнительной переменной.
+
     public static void task3() {
         int num1 = 20;
         int num2 = 25;
@@ -60,6 +63,7 @@ public class Main {
     }
 
     //4.заполнить массив степенями числа 2 , где степени от 1 до n
+
     public static void task4(long[] arr, int maxN) {
         int n = 1;
         int index = 0;
@@ -77,6 +81,7 @@ public class Main {
     }
 
     //5.выполнить задание из рункта 3, но без использования дополнительной переменной
+
     public static void task5() {
         int num1 = 15;
         int num2 = 5;
@@ -90,6 +95,7 @@ public class Main {
     //ее значением прямо в коде. Объявить перемнную y
     //типа Integer  и присвоить ей  значение из переменной x без использования
     //вызовов методов  какого - либо класса.
+
     public static void task6() {
         float x = 25.3f;
         Integer y = (int) x;
@@ -98,6 +104,7 @@ public class Main {
     //создать метод public static void task___()
     //создать в методе 2 строки "abc" и "abc" в переменных String  str1
     // и String  str2 так, чтобы выражение  str1==str2 возвращало false
+
     public static void task7() {
         String str1 = new String("abc");
         String str2 = "abc";
@@ -154,6 +161,7 @@ public class Main {
 значением "а". Используя цикл while и переменную sign вывести
 в терминал все буквы от a до z
 */
+
     public static void task12() {
         char sign = 'a';
         // while (sign<=127){
@@ -185,9 +193,10 @@ public class Main {
     }
 
     /*
-определить количество всех трехзначных чисел,
-кратных 7 и также сумма цифр котрых равна 7;
-*/
+    определить количество всех трехзначных чисел,
+    кратных 7 и также сумма цифр котрых равна 7;
+    */
+
     public static void task14() {
         int x = 100;
         int counter = 0;
@@ -259,32 +268,99 @@ public class Main {
   Создать массив и заполнить его в цикле while заглавными
   буквами английского алфавита без использования ввода с клавиатуры.
   */
-public static void task17(){
-int size='Z'-'A'+1;
-char[] arr=new char[size];
-char sign='A';
-int index=0;
-while (index<size){
-    arr[index]=sign;
-    index++;
-    sign++;
-}
-    System.out.println(Arrays.toString(arr));
-}
-   /*
- Создать метод public static void task15().
- Создать массив типа float и размера 20.
- Проинициализировать его в цикле случайными значениями
- в диапазоне от 163.0 до 197.0 (не включая 197).
-  */
-    public static void task18 (){
-    float[]arr=new float[20];
-   int index=0;
-   while (index< arr.length){
-       arr[index]=(float) (163 + Math.random() *34);
-       index++;
-   }
+
+    public static void task17() {
+        int size = 'Z' - 'A' + 1;
+        char[] arr = new char[size];
+        char sign = 'A';
+        int index = 0;
+        while (index < size) {
+            arr[index] = sign;
+            index++;
+            sign++;
+        }
         System.out.println(Arrays.toString(arr));
+    }
+
+    /*
+  Создать метод public static void task15().
+  Создать массив типа float и размера 20.
+  Проинициализировать его в цикле случайными значениями
+  в диапазоне от 163.0 до 197.0 (не включая 197).
+   */
+
+    public static void task18() {
+        float[] arr = new float[20];
+        int index = 0;
+        while (index < arr.length) {
+            arr[index] = (float) (163 + Math.random() * 34);
+            index++;
+        }
+        System.out.println(Arrays.toString(arr));
+    }
+
+    /*
+  Создать метод public static void task16().
+  Объявить массив типа int и размера 3. Проинициализировать массив
+  значениями 11, 22, 33. Поменять значения местами так, чтобы в массиве
+  они оказались в следующем порядке: 22 33 11. Это необходимо выполнить
+  без использования дополнительной переменной.
+   */
+
+    public static void task19() {
+        int[] arr = new int[]{11, 22, 33};
+        arr[0] = arr[0] + arr[1];//11+22
+        arr[1] = arr[0] - arr[1];//33-22 {33,11,33}
+        arr[0] = arr[0] - arr[1];//33-11{22,11,33}
+        arr[2] = arr[2] + arr[1];//33-11{22,11,44}
+        arr[1] = arr[2] - arr[1];//33-11{22,33,44 }
+        arr[2] = arr[2] - arr[1];//33-11{22,33,11}
+        System.out.println(Arrays.toString(arr));
+    }
+
+    /*
+    Создать метод public static void task17().
+    Объявить и проинициализировать переменную int x  внутри метода.
+    Написать ниже код так, чтобы если переменная == 0 выводился в терминал 0,
+    если больше 0, то выводилась в терминал 1, если меньше 0, выводилась
+    в терминал -1. Код необходимо написать так, чтобы выполнялось как можно
+    меньше вычислений условий.
+    */
+
+    public static void task20() {
+        int x = 5;
+        int res = 0;
+        if (x < 5) {
+            res = -1;
+        } else if (x > 0) {
+            res = 1;
+        } else {
+            res = 0;
+        }
+        System.out.println(res);
+    }
+
+    /*
+    Создать метод public static void task18().
+    Объявить в методе переменную String str1 и проинициализировать
+    словом на английском языке длиной хотя бы 7 символов. Объявить переменную
+    String str2 и написать код, который сохранит в переменную str2 значение переменной
+    str1 перевернутое из конца в начало. то есть сохранит строку с символами, написанными
+    в обратном порядке, из конца в начало. Запрещается использование методов типа revert
+    */
+
+    public static void task21() {
+        String str1="Dorothy";
+        String str2;
+        StringBuilder sb=new StringBuilder(7);
+        int index=str1.length()-1;
+        while (index>=0){
+           sb.append(str1.charAt(index));
+           index--;
+        }
+            str2= sb.toString();
+            System.out.println(str1);
+            System.out.println(str2);
     }
 
 }
