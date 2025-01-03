@@ -19,7 +19,7 @@ public class Main {
         //long[]arr3=new long[5];
         //task4(arr3,maxN);
         // System.out.println(Arrays.toString(arr3));
-        task17();
+        task18();
     }
 
     //1. вывести элементы массива в обратном порядке на экран
@@ -271,6 +271,20 @@ while (index<size){
 }
     System.out.println(Arrays.toString(arr));
 }
-
+   /*
+ Создать метод public static void task15().
+ Создать массив типа float и размера 20.
+ Проинициализировать его в цикле случайными значениями
+ в диапазоне от 163.0 до 197.0 (не включая 197).
+  */
+    public static void task18 (){
+    float[]arr=new float[20];
+   int index=0;
+   while (index< arr.length){
+       arr[index]=(float) (163 + Math.random() *34);
+       index++;
+   }
+        System.out.println(Arrays.toString(arr));
+    }
 
 }
