@@ -9,6 +9,6 @@ public class Puppy extends Dog{
     }
 
     public void tryToRemoveBabyCollar(){
-        System.out.println(" Puppy tries to remove collar ");
+        System.out.println(" Puppy" + getName()+" tries to remove collar ");
     }
 }
