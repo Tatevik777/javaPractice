@@ -24,5 +24,6 @@ public class Main {
 
     letterManager.sendLetter(letter);
     letterManager.receiveLetter(letter);
+
   }
 }
